@@ -1,0 +1,4 @@
+{% for product in products %}
+    <h2><a href="{% url 'product_detail' product.slug %}">{{ product.name }}</a></h2>
+    <p>{{ product.price }} €</p>
+{% endfor %}
